@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廖得鈞-作業</title>
+</head>
+
+<body>
+    <table border="1">
+        <caption>產業新尖兵 Exercise 練習</caption>
+        <tr align="center">
+            <td>Exercise</td>
+            <td>描述</td>
+            <td>超連結</td>
+        </tr>
+        <tr>
+            <td>Exercise 01 - 修改文字屬性</td>
+            <td>利用所學將文字修改如例題相同</td>
+            <td><a href="Exercise/Exercise01/index.html">Exercise01</a></td>
+        </tr>
+        <tr>
+            <td>Exercise 02 - 超連結</td>
+            <td>利用所學將文字轉為超連結</td>
+            <td><a href="Exercise/Exercise02/index.html">Exercise02</a></td>
+        </tr>
+        <tr>
+            <td>Exercise 03 - 連結網頁</td>
+            <td>建立至少三個頁面，以超連結互相連結 </td>
+            <td><a href="Exercise/Exercise03/index.html">Exercise03</a></td>
+        </tr>
+        <tr>
+            <td>Exercise 04 - 清單網站</td>
+            <td>製作一個有清單概念的網站 </td>
+            <td><a href="Exercise/Exercise04/index.html">Exercise04</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
