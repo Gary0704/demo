@@ -5,23 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab04</title>
+    <title>Lab05</title>
     <style>
+        body::before{
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image:url("https://pic.pngbag.com/00/44/90/bb6da1dd20216406.jpg");
+            background-repeat:no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-size: cover;
+            opacity: .7;
+        }
+        table{
+            border: outset;
+            border-width:thick;
+            border-radius:30px;
+            size: 1.5rem;
+
+
+        }
+        th{border-radius:10px;}
         table caption{font-size: 3rem;color: red;font-family: "標楷體";}
         thead{font-size: 20px;background-color: blueviolet;}
         tbody{background-color: violet;}
         th.time{background-color: cadetblue;}
         .wushu{ align="center "; background-color:rgb(247, 135, 7)}
-
+        .big{
+            font-size: 1.5rem;
+        }
+        #day{font-style: oblique;}
     </style>
 </head>
 
 <body>
 
-    <table  border='1' align="center">
+    <table  align="center">
         <caption>課表</caption>
 
-        <thead>
+        <thead class = 'big' id = 'day'>
             <tr span="5">
                 <th> </th>
                 <th>星期一</th>
@@ -31,7 +58,7 @@
                 <th>星期五</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class = 'big'>
             <tr>
                 <th class="time">09:10</th>
                 <th>國文</th>
