@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            margin: 0;
+            flex-direction: column;
+        }
+        
+        .imp {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        
+        header {
+            background-color: blueviolet;
+        }
+        
+        main {
+            background-color: cadetblue;
+            flex-grow: 2;
+            text-align: center;
+        }
+        
+        aside {
+            display: flex;
+            background-color: rgb(48, 45, 45);
+            color:white;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer {
+            background-color: cyan;
+        }
+        
+        img {
+            width: 100px;
+        }
+        .name{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="imp">
+        <aside>
+            <div class='name'>
+                <img src="photo.jfif" alt=""></a>
+                <h1>廖得鈞</h1>
+            </div>
+            <div>
+                <h3>基本資料</h3>
+                <hr>
+                <p></p>
+            </div>
+            <div>
+                <h3>聯絡資訊</h3>
+                <hr>
+                <p>手機:0912345678</p>
+                <p>Email:ggsmida@yahoo.com.tw</p>
+            </div>
+        </aside>
+        <main>aside</main>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>
