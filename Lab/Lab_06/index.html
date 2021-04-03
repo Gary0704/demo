@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab06</title>
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("https://pic.pngbag.com/00/44/90/bb6da1dd20216406.jpg");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+            background-size: cover;
+            opacity: .7;
+        }
+        
+        table {
+            border: outset;
+            border-width: thick;
+            border-radius: 30px;
+            size: 1.5rem;
+        }
+        
+        th {
+            border-radius: 10px;
+        }
+        
+        table caption {
+            font-size: 3rem;
+            color: rgb(245, 241, 7);
+            font-family: "標楷體";
+        }
+        
+        thead {
+            font-size: 20px;
+            background-color: blueviolet;
+        }
+        
+        tbody {
+            background-color: violet;
+        }
+        
+        th.time {
+            background-color: cadetblue;
+        }
+        
+        .wushu {
+            align="center ";
+            background-color: rgb(247, 135, 7)
+        }
+        
+        .big {
+            font-size: 1.5rem;
+        }
+        
+        #day {
+            font-style: oblique;
+        }
+        /* * {
+            border: 2px black solid;
+        } */
+        
+        body {
+            margin: 0;
+            display: grid;
+            grid-template: 20vh 40vh 40vh / 50vw 50vw;
+        }
+        
+        .korbiu {
+            grid-area: 3/2/4/3;
+        }
+        
+        .img {
+            grid-area: 2/1/4/2;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .title1 {
+            font-size: 2rem;
+            color: red;
+            text-align: center;
+            grid-area: 1/1/2/3;
+        }
+        
+        span {
+            background-color: greenyellow;
+            margin-right: 5px;
+        }
+        
+        .attention {
+            display: grid;
+            grid-area: 2/2/3/3;
+            text-align: center;
+            color: red;
+            grid-template: 1fr/1fr 1fr 1fr;
+            
+        }
+        .h{
+            grid-area:1/2/2/3;
+            text-align: center;
+            color: red;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='title1'>
+        <h1><span>選課系統</span></h1>
+    </div>
+    <div class='img'>
+        <img src="04-1.jpg" alt="">
+    </div>
+    <div class='attention'>
+        <div class='h'>
+            <h2>注意事項</h2>
+            <p>一旦選課不能再更改，請慎重選擇</p>
+            <p>選課時間:3/21 0:00~05:00</p>
+        </div>
+    </div>
+    <div class='korbiu'>
+        <table align="center">
+            <caption>已選課表</caption>
+
+            <thead class='big' id='day'>
+                <tr span="5">
+                    <th> </th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                </tr>
+            </thead>
+            <tbody class='big'>
+                <tr>
+                    <th class="time">09:10</th>
+                    <th>國文</th>
+                    <th>英文</th>
+                    <th>數學</th>
+                    <th>物理</th>
+                    <th>社會</th>
+                </tr>
+                <tr>
+                    <th class="time">10:10</th>
+                    <th>國文</th>
+                    <th>英文</th>
+                    <th>數學</th>
+                    <th>物理</th>
+                    <th>社會</th>
+                </tr>
+                <tr>
+                    <th class="time">11:10</th>
+                    <th>國文</th>
+                    <th>英文</th>
+                    <th>數學</th>
+                    <th>物理</th>
+                    <th>社會</th>
+                </tr>
+                <tr>
+                    <th class="time">12:10</th>
+                    <th class="wushu" colspan="5">午休</th>
+                </tr>
+                <tr>
+                    <th class="time">13:10</th>
+                    <th>體育</th>
+                    <th>實驗</th>
+                    <th>化學</th>
+                    <th>地科</th>
+                    <th>社團</th>
+                </tr>
+                <tr>
+                    <th class="time">14:10</th>
+                    <th>體育</th>
+                    <th>實驗</th>
+                    <th>化學</th>
+                    <th>地科</th>
+                    <th>社團</th>
+                </tr>
+                <tr>
+                    <th class="time">15:10</th>
+                    <th>體育</th>
+                    <th>實驗</th>
+                    <th>化學</th>
+                    <th>地科</th>
+                    <th>社團</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

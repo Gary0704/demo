@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ::selection {
-  color: yellow;
-  background: blue;
-}
-
+         ::selection {
+            color: yellow;
+            background: rgb(228, 253, 0);
+        }
+        
+        .show::selection {
+            color: red;
+            background-color: yellow;
+        }
     </style>
 </head>
+
 <body>
-    <p>你好，我是一位國王</p>
+    <p><span class='show'>你</span>好，我<span class='show'>是</span>一位國<span class='show'>王</span>，名叫斯洛伐克，是第<span class='show'>八</span>代當家，我們國家的<span class='show'>蛋</span>糕非常好吃</p>
 </body>
+
 </html>
