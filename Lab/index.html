@@ -6,12 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 練習</title>
+    <style>
+        table {
+            border: black 3px solid;
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: auto;
+        }
+        td {
+            border: solid;
+        }
+        td:hover{
+            background-color: #E6FBFF;
+
+        }
+        tr:nth-child(odd) {
+            background: rgb(230, 228, 228)
+        }
+        tr:nth-child(even) {
+            background-color: #FAFAFA;
+        }
+        .top {
+            text-align: center;
+            font-weight: bold;
+        }
+        caption{
+            font-weight: bold;
+            color: red;
+            font-size: 2rem;
+        }
+        .top:not(.tr){
+            background-color: rgb(195, 168, 221);
+        }
+        td:nth-child(3n){
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1" align="center">
+    <table>
         <caption>產業新尖兵 Lab 練習</caption>
-        <tr align="center" style="font-weight:400;">
+        <tr class = "top">
             <td>Lab</td>
             <td>描述</td>
             <td>超連結</td>
@@ -19,12 +55,12 @@
         <tr>
             <td>Lab 01 - 課表</td>
             <td>使用表格製作一份課表</td>
-            <td><a href="Lab_01.html">Lab_01</a></td>
+            <td><a href="Lab01/index.html">Lab01</a></td>
         </tr>
         <tr>
             <td>Lab 02 - 美化課表</td>
             <td>利用Style屬性美化課表</td>
-            <td><a href="Lab_02.html">Lab_02</a></td>
+            <td><a href="Lab02/index.html">Lab02</a></td>
         </tr>
         <tr>
             <td>Lab 03 - 彙整</td>
@@ -34,7 +70,17 @@
         <tr>
             <td>Lab 04 - Style</td>
             <td>使用適當的選擇器，重新定義樣式 </td>
-            <td><a href="Lab_04.html">Lab_04</a></td>
+            <td><a href="Lab04/index.html">Lab04</a></td>
+        </tr>
+        <tr>
+            <td>Lab 05 - CSS</td>
+            <td>使用學到的各種樣式，進一步美化課表</td>
+            <td><a href="Lab05/index.html">Lab05</a></td>
+        </tr>
+        <tr>
+            <td>Lab 06 - 系統介面</td>
+            <td>嘗試規劃有包含課表的頁面 </td>
+            <td><a href="Lab06/index.html">Lab06</a></td>
         </tr>
     </table>
 </body>
