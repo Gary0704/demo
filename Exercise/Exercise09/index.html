@@ -16,9 +16,12 @@
             border: 3px black solid;
             text-align: center;
             border-collapse: collapse;
-            border-bottom: none;
-            
-
+        }
+        
+        tfoot:not(table) {
+            border: none;
+            text-align: center;
+            border-collapse: collapse;
         }
         
         .solid_bottom {
@@ -41,7 +44,8 @@
         caption {
             background-color: rgb(10, 243, 224);
         }
-        .dash{
+        
+        .dash {
             border-bottom: 3px black dashed;
         }
     </style>
@@ -50,70 +54,75 @@
 <body>
 
 
-    <table border='1'>
+    <table >
         <caption><b>資產負債表</b></caption>
-        <tr class="yellow">
-            <td colspan="3" class="solid_bottom solid_left"><b>資產</b></td>
-            <td colspan="3" class="solid_bottom solid_left"><b>負債及股東權益</b></td>
-        </tr>
-        <tr>
-            <td class="solid_bottom solid_left" rowspan="4" style="background-color:rgb(102, 233, 102);">流動資產</td>
-            <td>現金</td>
-            <td class='number'>399,526</td>
-            <td rowspan="3" style="background-color:rgb(238, 164, 234);" class="solid_bottom solid_left">流動負債</td>
-            <td>短期借款</td>
-            <td class="number">1,634,870</td>
-        </tr>
-        <tr>
-            <td>存貨</td>
-            <td class='number'>819954</td>
-            <td></td>
-            <td class="number">1,912,740</td>
-        </tr>
-        <tr>
-            <td>應收帳款</td>
-            <td class='number'>945,494</td>
-            <td class="solid_bottom">應付帳款</td>
-            <td class="number solid_bottom">277,870</td>
-        </tr>
-        <tr>
-            <td class="solid_bottom"></td>
-            <td class='number solid_bottom'>2,164,947</td>
-            <td style="background-color:rgb(233, 14, 167);" class="solid_bottom solid_left">非流動負債</td>
-            <td class="solid_bottom">長期借款</td>
-            <td class="number solid_bottom">69,600</td>
-        </tr>
-        <tr>
-            <td rowspan="4" style="background-color:rgb(37, 155, 26);"class="solid_bottom">非流動資產</td>
-            <td rowspan="4" class="solid_bottom">固定收支</td>
-            <td class='number solid_bottom' rowspan="4">1,361,096</td>
-            <td style="background-color:rgb(238, 164, 234);" class="solid_bottom solid_left">負債合計</td>
-            <td class="solid_bottom"></td>
-            <td class="number solid_bottom">1,982,340</td>
-        </tr>
-        <tr>
-            <td rowspan="2" style="background-color:rgb(91, 238, 78);" class="solid_left">股東權益</td>
-            <td>股本</td>
-            <td class="number">1,102,186</td>
-        </tr>
-        <tr>
-            <td>保留盈餘</td>
-            <td class="number">441,544</td>
-        </tr>
-        <tr>
-            <td style="background-color:rgb(91, 238, 78);" class="solid_bottom solid_left">股東權益合計</td>
-            <td class="solid_bottom"></td>
-            <td class="numver solid_bottom">1,543,730</td>
-        </tr>
-        <tr class="calendar-noBorder">
-            <td>資產合計</td>
-            <td></td>
-            <td class="number dash">3,526,070</td>
-            <td>負債及股東權益</td>
-            <td></td>
-            <td class="number dash">3,526,070</td>
-        </tr>
-
+        <thead>
+            <tr class="yellow">
+                <td colspan="3" class="solid_bottom solid_left"><b>資產</b></td>
+                <td colspan="3" class="solid_bottom solid_left"><b>負債及股東權益</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="solid_bottom solid_left" rowspan="4" style="background-color:rgb(102, 233, 102);">流動資產</td>
+                <td>現金</td>
+                <td class='number'>399,526</td>
+                <td rowspan="3" style="background-color:rgb(238, 164, 234);" class="solid_bottom solid_left">流動負債</td>
+                <td>短期借款</td>
+                <td class="number">1,634,870</td>
+            </tr>
+            <tr>
+                <td>存貨</td>
+                <td class='number'>819954</td>
+                <td></td>
+                <td class="number">1,912,740</td>
+            </tr>
+            <tr>
+                <td>應收帳款</td>
+                <td class='number'>945,494</td>
+                <td class="solid_bottom">應付帳款</td>
+                <td class="number solid_bottom">277,870</td>
+            </tr>
+            <tr>
+                <td class="solid_bottom"></td>
+                <td class='number solid_bottom'>2,164,947</td>
+                <td style="background-color:rgb(233, 14, 167);" class="solid_bottom solid_left">非流動負債</td>
+                <td class="solid_bottom">長期借款</td>
+                <td class="number solid_bottom">69,600</td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="background-color:rgb(37, 155, 26);" class="solid_bottom">非流動資產</td>
+                <td rowspan="4" class="solid_bottom">固定收支</td>
+                <td class='number solid_bottom' rowspan="4">1,361,096</td>
+                <td style="background-color:rgb(238, 164, 234);" class="solid_bottom solid_left">負債合計</td>
+                <td class="solid_bottom"></td>
+                <td class="number solid_bottom">1,982,340</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color:rgb(91, 238, 78);" class="solid_left">股東權益</td>
+                <td>股本</td>
+                <td class="number">1,102,186</td>
+            </tr>
+            <tr>
+                <td>保留盈餘</td>
+                <td class="number">441,544</td>
+            </tr>
+            <tr>
+                <td style="background-color:rgb(91, 238, 78);" class="solid_bottom solid_left">股東權益合計</td>
+                <td class="solid_bottom"></td>
+                <td class="numver solid_bottom">1,543,730</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="calendar-noBorder">
+                <td>資產合計</td>
+                <td></td>
+                <td class="number dash">3,526,070</td>
+                <td>負債及股東權益</td>
+                <td></td>
+                <td class="number dash">3,526,070</td>
+            </tr>
+        </tfoot>
     </table>
 
 </body>
