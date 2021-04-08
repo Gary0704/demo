@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise11</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        #main {
+            display: flex;
+            background-color: rgb(241, 115, 77);
+            width: 100%;
+            height: auto;
+            color: white;
+            justify-content: space-between;
+            font-size: 1.5rem;
+        }
+        img{
+            width: 200px;
+        }
+        tr:nth-child(even) div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        tr:nth-child(even) p{
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Comic Sans MS';
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <p style="font-family: fantasy; font-style:italic;">Myshop</p>
+        <p style="font-family:'標楷體';"><a href="">商品</a> <a href="">購物車</a></p>
+    </div>
+    <div class="price">
+        <table>
+            <tr>
+                <td><img src="https://i.imgur.com/ZMpETy0b.gif" alt=""></td>
+                <td><img src="https://i.imgur.com/ODZ7Zpzb.jpg" alt=""></td>
+                <td><img src="https://i.imgur.com/qT3MWAbb.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h>蛋糕</h>
+                        <button>加入購物車</button>
+                        
+                    </div>
+                    <p>NT$150</p>
+                </td>
+                <td>
+                    <div>
+                        <h>滿滿的點心</h>
+                        <button onclick="">加入購物車</button>
+                    </div>
+                    <p>NT$300</p>
+                </td>
+                <td>
+                    <div>
+                        <h>紅色的</h>
+                        <button onclick="">加入購物車</button>
+                    </div>
+                    <p>NT$666</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://i.imgur.com/2G16qPab.jpg" alt=""></td>
+                <td><img src="https://i.imgur.com/fziT4jzb.gif" alt=""></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h>蛋糕</h>
+                        <button onclick="">加入購物車</button>
+                    </div>
+                    <p>NT$85</p>
+                </td>
+                <td>
+                    <div>
+                        <h>魔術方塊?</h>
+                        <button onclick="">加入購物車</button>
+                    </div>
+                    <p>NT$999</p>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
